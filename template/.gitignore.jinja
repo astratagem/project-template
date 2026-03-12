@@ -1,17 +1,10 @@
 # SPDX-FileCopyrightText: {{ copyright_name }} <{{ copyright_email }}>
 # SPDX-License-Identifier: {{ license }}
 
-# Template lock files
-/template/flake.lock
-/template/.config/flake.lock
-
 # Data/logs/testing
 .data
 *.log
 *.sql
-/test-results/
-/playwright-report/
-/blob-report/
 
 # Secrets
 auth.json
@@ -20,7 +13,6 @@ auth.json
 !.env.example
 .ssh
 *.key
-*.pem
 
 # Dependencies
 node_modules
@@ -29,7 +21,6 @@ vendor
 # Context-specific
 *.cache
 *.local
-*.local.*
 *.local.*
 !*.local*.example
 .direnv
